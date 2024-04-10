@@ -1,5 +1,5 @@
 
-#+TITLE: Iz's XenoDM Config
+#+TITLE: Iz's Enhanced Motif WM Config
 #+DESCRIPTION: Mainly for personal backups, but if you want 'em, use 'em.
 #+KEYWORDS: org-mode, readme, OpenBSD, XenoDM, sh, ksh, xresources, izder
 #+PROPERTY: header-args: :tangle ~/.dotfiles/XenoDM-Config :mkdirp t

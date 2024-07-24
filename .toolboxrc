@@ -6,7 +6,7 @@
     # string separated by the : character.
 
     &File Managerr:    pcmanfm
-    &Emacs:	       emacsclient -c -a ''
+    &Emacs:	           emacsclient -c -a ''
     &Web-Browser:      firefox-esr
     &E-Maill:	       claws-mail
 }
@@ -20,7 +20,7 @@
     X11 &Utilities 
     {
 	&Text Editor:	emacsclient -c -a ''
-	&Rofi:		rofi -i -show-icons -matching fuzzy -show drun
+	&Rofi:		    rofi -i -show-icons -matching fuzzy -show drun
 	Ca&lculator:	xcalc
     }
 }
@@ -29,9 +29,10 @@
 # in sh(1) syntax: $name or ${name}.
 &Locations
 {
-    &Home:	pcmanfm $HOME
+    &Home:	    pcmanfm $HOME
     &Projects:	pcmanfm $HOME/Projects
     &Pictures:	pcmanfm $HOME/Pictures
+    &Videos:	pcmanfm $HOME/Videos
     &Documents:	pcmanfm $HOME/Documents
 }
 
@@ -41,20 +42,20 @@
     &Media
     {
 	    &Player:	playerctl play-pause
-	    &Stop:	playerctl stop
+	    &Stop:	    playerctl stop
 	    &Previous:	playerctl previous
-	    &Next:	playerctl next
+	    &Next:	    playerctl next
 	    &Shuffle:	playerctl shuffle toggle
     }
     &System
     {
-	    &Screenshot:			"scrot -F ~/Pictures/screenshot-`date +%F`.png"
-	    &Screenshot Split:		"scrot -s -F ~/Pictures/screenshot-split-`date +%F`.png"
-	    &Screenshot Active Window:	"scrot -u -F ~/Pictures/screenshot-activewin-`date +%F`.png"
+	    &Screenshot:			    scrot -F ~/Pictures/screenshot-`date +%F`.png
+	    &Screenshot Split:		    scrot -s -F ~/Pictures/screenshot-split-`date +%F`.png
+	    &Screenshot Active Window:	scrot -u -F ~/Pictures/screenshot-activewin-`date +%F`.png
     }
     &Other
     {
-	&Mail:		claws-mail
+	&Mail:		    claws-mail
 	&Music Player:	deadbeef
 	&File Manager:	pcmanfm
 	&Web Browser:	firefox-esr

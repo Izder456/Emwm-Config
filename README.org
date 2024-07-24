@@ -74,9 +74,9 @@ Keys DefaultKeyBindings
     Alt<Key>b			root|icon|window	f.exec "feh --bg-fill -z /usr/local/share/backgrounds"
     Alt<Key>c			root|icon|window	f.exec "st"
     Alt<Key>space		root|icon|window	f.exec "rofi -i -show-icons -matching fuzzy -show drun"
-    Print			root|icon|window	f.exec "scrot -F ~/Pictures/screenshot-`date +%F`.png"
-    Alt Shift<Key>Print		root|icon|window	f.exec "scrot -s -F ~/Pictures/screenshot-split-`date +%F`.png"
-    Alt <Key>Print		root|icon|window	f.exec "scrot -u -F ~/Pictures/screenshot-activewin-`date +%F`.png"
+    <Key>Print			root|icon|window	f.exec scrot -F ~/Pictures/screenshot-`date +%F`.png
+    Alt Shift<Key>Print		root|icon|window	f.exec scrot -s -F ~/Pictures/screenshot-split-`date +%F`.png
+    Alt <Key>Print		root|icon|window	f.exec scrot -u -F ~/Pictures/screenshot-activewin-`date +%F`.png
 }
 
 ! Mouse Button Bindings
@@ -116,7 +116,7 @@ Buttons PointerButtonBindings
     # string separated by the : character.
 
     &File Managerr:    pcmanfm
-    &Emacs:	       emacsclient -c -a ''
+    &Emacs:	           emacsclient -c -a ''
     &Web-Browser:      firefox-esr
     &E-Maill:	       claws-mail
 }
@@ -130,7 +130,7 @@ Buttons PointerButtonBindings
     X11 &Utilities 
     {
 	&Text Editor:	emacsclient -c -a ''
-	&Rofi:		rofi -i -show-icons -matching fuzzy -show drun
+	&Rofi:		    rofi -i -show-icons -matching fuzzy -show drun
 	Ca&lculator:	xcalc
     }
 }
@@ -139,9 +139,10 @@ Buttons PointerButtonBindings
 # in sh(1) syntax: $name or ${name}.
 &Locations
 {
-    &Home:	pcmanfm $HOME
+    &Home:	    pcmanfm $HOME
     &Projects:	pcmanfm $HOME/Projects
     &Pictures:	pcmanfm $HOME/Pictures
+    &Videos:	pcmanfm $HOME/Videos
     &Documents:	pcmanfm $HOME/Documents
 }
 
@@ -151,20 +152,20 @@ Buttons PointerButtonBindings
     &Media
     {
 	    &Player:	playerctl play-pause
-	    &Stop:	playerctl stop
+	    &Stop:	    playerctl stop
 	    &Previous:	playerctl previous
-	    &Next:	playerctl next
+	    &Next:	    playerctl next
 	    &Shuffle:	playerctl shuffle toggle
     }
     &System
     {
-	    &Screenshot:			"scrot -F ~/Pictures/screenshot-`date +%F`.png"
-	    &Screenshot Split:		"scrot -s -F ~/Pictures/screenshot-split-`date +%F`.png"
-	    &Screenshot Active Window:	"scrot -u -F ~/Pictures/screenshot-activewin-`date +%F`.png"
+	    &Screenshot:			    scrot -F ~/Pictures/screenshot-`date +%F`.png
+	    &Screenshot Split:		    scrot -s -F ~/Pictures/screenshot-split-`date +%F`.png
+	    &Screenshot Active Window:	scrot -u -F ~/Pictures/screenshot-activewin-`date +%F`.png
     }
     &Other
     {
-	&Mail:		claws-mail
+	&Mail:		    claws-mail
 	&Music Player:	deadbeef
 	&File Manager:	pcmanfm
 	&Web Browser:	firefox-esr
@@ -179,15 +180,8 @@ Buttons PointerButtonBindings
 ! Emwm Stuffs
 !!
 ! fonts
-,*renderTable.variable.fontType: FONT_IS_XFT
-,*renderTable.variable.fontName: Liberation Serif 
-,*renderTable.variable.fontSize: 12
-,*renderTable: variable
-,*renderTable.fixed.fontType: FONT_IS_XFT
-,*renderTable.fixed.fontName: Spleen 16x32
-,*renderTable.fixed.fontSize: 12
-,*XmText*renderTable: fixed
-,*XmTextField*renderTable: fixed
+,*font: fixed
+,*fontSize: 16
 ! colors
 ,*XmList.background: #1d2021
 ,*XmText.background: #ebdbb2	    

@@ -5,7 +5,7 @@
     # A menu item consists of a title and a command
     # string separated by the : character.
 
-    &File Managerr:    pcmanfm
+    &File Manager:    pcmanfm
     &Emacs:	           emacsclient -c -a ''
     &Web-Browser:      firefox-esr
     &E-Maill:	       claws-mail

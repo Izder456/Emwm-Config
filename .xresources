@@ -1,10 +1,26 @@
 !!
 ! Emwm Stuffs
 !!
-! fonts
+
+! Fonts
 *font: fixed
 *fontSize: 16
-! colors
+Emwm*fontList: -*-spleen-medium-*-normal-16-*-*-*-*-*-*-*
+Emwm*menu*fontList: -*-spleen-medium-*-normal-16-*-*-*-*-*-*-*
+
+! MultiScreen
+Emwm*multiScreen: True
+Emwm*screens: Ness Jeff Paula Poo
+
+! Icon Box
+Emwm*useIconBox: True
+Emwm*iconBoxDecoration: -all
+Emwm*iconBoxGeometry: 10x1+600-0
+Emwm*iconBoxSBDisplayPolicy: horizontal
+Emwm*iconBoxName: Icon Box
+Emwm*iconBoxTitle: Icon Box
+
+! Colors
 *XmList.background: #1d2021
 *XmText.background: #ebdbb2	    
 *XmList.foreground: #fcf1c7
@@ -12,7 +28,6 @@
 *XmTextField.foreground: #fcf1c7
 *TipLabel.background: #ebdbb2
 *TipShell.borderColor: #282828
-*TipShell.borderWidth: 4
 Emwm*client*background: #282828
 Emwm*client*activeBackground: #1d2021
 Emwm*client*foreground: #fcf1c7
@@ -21,7 +36,14 @@ Emwm*icon*background: #282828
 Emwm*icon*activeBackground: #1d2021
 Emwm*icon*foreground: #fcf1c7
 Emwm*icon*activeForeground: #ebdbb2
+
 ! Tweaks
+Emwm*limitResize: True
+Emwm*clientAutoPlace: True
+Emwm*moveOpaque: False
+*Customization: -color
+*lookAndFeel: motif
+*TipShell.borderWidth: 4
 *multiClickTime: 260
 *XmScrollBar.width: 12
 *XmScrollBar.height: 12
@@ -33,6 +55,5 @@ Emwm*icon*activeForeground: #ebdbb2
 *enableToggleColor: True
 *enableToggleVisual: True
 *enableDragIcon: True
-! Dithering
 Emwm*client*top*ShadowPixmap: 1x1
 Emwm*client*activeTopShadowPixmap: 1x1

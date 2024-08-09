@@ -219,7 +219,6 @@ Emwm*limitResize: True
 Emwm*clientAutoPlace: True
 Emwm*moveOpaque: False
 ,*Customization: -color
-,*lookAndFeel: motif
 ,*TipShell.borderWidth: 4
 ,*multiClickTime: 260
 ,*XmScrollBar.width: 12

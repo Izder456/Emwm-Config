@@ -15,7 +15,7 @@
 # The SEPARATOR keyword places a separator gadget between items.
 &Utilities
 {
-    &Terminal:	urxvtc
+    &Terminal:	urxvtc -g 92x32
     SEPARATOR
     X11 &Utilities 
     {

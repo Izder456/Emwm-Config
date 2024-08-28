@@ -6,7 +6,7 @@
     # string separated by the : character.
 
     &File Manager:     pcmanfm
-    &Emacs:	       emacs
+    &Emacs:           emacsclient -a '' -c
     &Web-Browser:      firefox-esr
     &E-Maill:	       claws-mail
 }
@@ -19,7 +19,7 @@
     SEPARATOR
     X11 &Utilities 
     {
-        &Text Editor:	emacs
+        &Text Editor:	emacsclient -a '' -c
         &Rofi:		rofi -i -show-icons -matching fuzzy -show drun
         Ca&lculator:	xcalc
     }
